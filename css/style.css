@@ -2305,6 +2305,7 @@ ul {
   transform: scale(1);
 }
 
+
 @media (max-width: 991px) {
   /* line 184, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_menu.scss */
   .main_menu {
@@ -2390,6 +2391,28 @@ ul {
   }
 }
 
+@media (max-width:480px){
+  .navbar-brand img {
+    max-width: 155px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    top: 0;
+    margin-top: -12px;
+
+  }
+}
+@media (max-width: 480px)
+{
+  .navbar-light .navbar-toggler{
+    border-color: transparent;
+    position: absolute;
+    left: 0;
+    margin-top: -5px;
+  }
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 273, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_menu.scss */
   .main_menu {
