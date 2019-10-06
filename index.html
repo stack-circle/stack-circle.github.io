@@ -46,13 +46,15 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" id="#home" href="index.html">
-              <img width="300px"src="img/stackcircle3.png" alt="logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="menu_icon"><i class="fas fa-bars"></i></span>
-            </button>
+            <div class="align-items-center">
+              <a class="navbar-brand" id="#home" href="index.html">
+                <img style="width:300px" src="img/stackcircle3.png" alt="logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="menu_icon"><i class="fas fa-bars"></i></span>
+              </button>
+            </div>
 
             <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
               <ul class="navbar-nav">
@@ -457,32 +459,32 @@
         <h1 class="pb-3">Our Services</h1>
         <div class="w-100 d-flex" style="flex-wrap: wrap">
           <div class="BODDY mx-auto">
-            <img src="../Stack-Force.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-50 rounded-circle">
+            <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
             <h3 class="pt-3">WordPress</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
           </div>
           <div class="BODDY mx-auto">
-            <img src="../Stack-Force.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-50 rounded-circle">
+            <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
             <h3 class="pt-3">WordPress</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
           </div>
           <div class="BODDY mx-auto">
-            <img src="../Stack-Force.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
+            <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
             <h3 class="pt-3">WordPress</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
           </div>
           <div class="BODDY mx-auto">
-            <img src="../Stack-Force.github.io/img/stackimages/WordPress_blue_logo.svg.png" class="w-50 rounded-circle">
+            <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
             <h3 class="pt-3">WordPress</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
           </div>
           <div class="BODDY mx-auto">
-            <img src="../Stack-Force.github.io/img/stackimages/WordPress_blue_logo.svg.png" class="w-50 rounded-circle">
+            <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
             <h3 class="pt-3">WordPress</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
           </div>
           <div class="BODDY mx-auto">
-            <img src="../Stack-Force.github.io/img/stackimages/WordPress_blue_logo.svg.png" class="w-50 rounded-circle">
+            <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
             <h3 class="pt-3">WordPress</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
           </div>
@@ -866,6 +868,7 @@
 
   <!-- jquery plugins here-->
   <!-- jquery -->
+
   <script src="js/jquery-1.12.1.min.js"></script>
   <!-- popper js -->
   <script src="js/popper.min.js"></script>
@@ -891,6 +894,13 @@
   <script src="js/mail-script.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+    })
+  </script>
 </body>
 
 </html>
