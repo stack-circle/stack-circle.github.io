@@ -1,0 +1,240 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 640px; */
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+ }
+ 
+ .about h1 {
+  font-size: 45px;
+  font-weight: 500;
+  color: black;
+ }
+ 
+ .about .ap1 {
+  color: black;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  letter-spacing: 1px;
+ }
+ 
+ .about .ap2 {
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  width: 80%;
+ }
+ 
+ .about .explain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 94%;
+  margin-top: 40px;
+ } 
+ 
+ .explain{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0px 40px 0px;
+  position: relative;
+ }
+ 
+ .explain .ablock{
+ width: 33.3%;
+ height: 50vh;
+ }
+ .about .explain .ablock .ex-div1 {
+  position: relative;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.about .explain .ablock .ex-div1 h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+
+}
+ .about .explain .ablock .ex-div1 .aep1 {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color:black;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-top: 20px;
+  text-align: center
+}
+ .about .explain .ablock .icon{
+  position: relative;
+  /* left: 5em; */
+  height: 6em;
+  width: 6em;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.about .explain .ablock .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+}
+ .divider{
+  border-width: .1rem;
+  border-color: #000000;
+}
+ 
+ /*..........About How We Work Section............*/
+ 
+ /* for tablet */
+ @media (max-width:800px) {
+   .explain{
+     width: 100%;
+   }
+ .explain .ablock{
+  width:95vw;
+  height: 50vh;
+  margin-top: 30px
+ }
+ }
+ 
+ .hww {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #0ab6ff;
+ }
+ 
+ .hww h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+ }
+ 
+ .hww .hp1 {
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+  color: #ffffff;
+  font-size: 15px;
+  /* font-weight: 400; */
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-family: "Poppins", sans-serif;
+ }
+ 
+ .hww .berief {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 96%;
+  /* background-color: gold; */
+ }
+ 
+ .hww .berief .hblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 22em;
+  width: 24%;
+  /* background-color: blue; */
+ }
+ 
+ .hww .berief .hblock .icon {
+  position: relative;
+  /* left: 5em; */
+  height: 9em;
+  width: 9em;
+  border: 1px solid white;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.3s;
+ }
+ 
+ .hww .berief .hblock .icon:hover {
+  transform: scale(0.95);
+ }
+ 
+ .hww .berief .hblock .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: #ffffff;
+ }
+ 
+ .hww .berief .hblock .bp1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #ffffff;
+  line-height: 1.5em;
+ }
+ 
+ .hww .berief .hblock .bp2 {
+  margin-top: 20px;
+  width: 90%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5em;
+  /* font-weight: 500; */
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+ }
+ @media (max-width:801px)  { 
+  .hww .berief{
+      width: 100%;
+      text-align: center;
+      justify-content: center
+  }
+  .hww .berief .hblock{
+      width: 49vw;
+
+  }
+}
+/* for mobile */
+@media (max-width:480px)  { 
+  .hww .berief{
+      width: 100%;
+      text-align: center;
+      justify-content: center
+  }
+  .hww .berief .hblock{
+      width: 95vw;
+  }
+}
