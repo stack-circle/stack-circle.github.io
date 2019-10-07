@@ -181,19 +181,22 @@
   transform: scale(1);
   transition: transform 0.3s;
  }
+ .hww .berief .hblock .icon img{
+   width: 75%
+ }
  
  .hww .berief .hblock .icon:hover {
   transform: scale(0.95);
  }
  
- .hww .berief .hblock .icon i {
+ /* .hww .berief .hblock .icon i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5em;
   color: #ffffff;
- }
+ } */
  
  .hww .berief .hblock .bp1 {
   margin-top: 20px;
