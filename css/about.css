@@ -241,7 +241,24 @@
       width: 95vw;
   }
 }
-.carousel-inner .carousel-item.active,
+.carousel-inner h4{
+  font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.carousel-indicators li{
+  border-color: #0ab6ff;
+}
+.carousel-control.right,.carousel-control.left{
+  background-image: none;
+    color: #0ab6ff;
+}
+.carousel-indicators li.active {
+    background-color: #0ab6ff!important;
+  }
+/* .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
   display: flex;
@@ -250,4 +267,4 @@
 .carousel-inner .carousel-item-right.active,
 .carousel-inner .carousel-item-next {
   transform: translateX(25%);
-}
+} */
