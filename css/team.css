@@ -1,0 +1,17 @@
+.team{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+#team{
+    padding:20px;
+    background-color: #0ab6ff;
+    margin-top: 20px;
+}
+.team .divider{
+    border-width: .1rem;
+    border-color: #000000;
+    max-width: 12rem;
+    padding-top: 20px;
+  }

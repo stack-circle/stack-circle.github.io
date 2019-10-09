@@ -8,7 +8,6 @@
   <title>Stack Force</title>
   <link rel="icon" href="img/favicon.png" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- animate CSS -->
   <link rel="stylesheet" href="css/animate.css" />
@@ -34,7 +33,10 @@
   <!-- our-services -->
   <!-- portfolio -->
   <link rel="stylesheet" href="css/portfolio.css" />
+  <!-- our services -->
   <link rel="stylesheet" href="css/our-services.css" />
+  <!-- team -->
+  <link rel="stylesheet" href="css/team.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -47,15 +49,13 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="align-items-center">
-              <a class="navbar-brand" id="#home" href="index.html">
-                <img style="width:300px" src="img/stackcircle3.png" alt="logo" />
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="menu_icon"><i class="fas fa-bars"></i></span>
-              </button>
-            </div>
+            <a class="navbar-brand" id="#home" href="index.html">
+              <img width="300px"src="img/stackcircle3.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="menu_icon"><i class="fas fa-bars"></i></span>
+            </button>
 
             <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
               <ul class="navbar-nav">
@@ -123,7 +123,7 @@
   <!-- home part end-->
   <!--......About Section.......-->
 
-  <section class="about about_us section_padding" id="about_us">
+  <section class="about" id="about_us">
     <h1>ABOUT</h1>
     <p class="ap1">WE CREATE <span style="color: black;">AWESOME STUFF</span></p>
     <P class="ap2">We are Creative Team located in Kalura, Bovlandia. Tempor incididunt ut labore et dolore magna
@@ -178,7 +178,7 @@
     </div>
 
   </section>
-  <!--......Technologies Section.......-->
+  <!--......About How We Work Section.......-->
 
   <section class="hww" id="technologies">
 
@@ -326,9 +326,7 @@
       </div>
 
     </div>
-
   </section>
-  <!-- ....Technologies Section End..... -->
   <!--......About Section end.......-->
 
   <!-- upcoming_event part start-->
@@ -362,12 +360,11 @@
     <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_4" />
   </section>
   <!-- stack part end-->
-
+  
   <!-- our services -->
   <section id="our-services" class="our-services">
     <div class="container">
       <div class="w-100 text-center">
-        <h1 class="pb-3">Our Services</h1>
         <div class="w-100 d-flex" style="flex-wrap: wrap">
           <div class="BODDY mx-auto">
             <img src="../stack-circle.github.io/img/full-stack-mern-app-jwt-auth.jpg" class="w-100">
@@ -405,14 +402,14 @@
   </section>
   <!-- end our services -->
 
-  <!-- Portfolio part end-->
+  <!-- Portfolio part start-->
   <section class="use_sasu section_padding mt-5" id="portfolio">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section_tittle text-center">
-            <h2 class="text-dark">Portfolio</h2>
-            <p class="text-dark">
+            <h2 class="text-white">Potfolio</h2>
+            <p class="text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
               ipsum suspendisse ultrices
@@ -422,7 +419,7 @@
       </div>
 
       <div class="card mb-5 col-lg-12 p-0">
-        <div class="row no-gutters">
+        <div class="row no-gutters shadow">
           <div class="col-lg-7 col-md-6 col-sm-12">
             <img src="img/portfolio/portfolio1.png" class="card-img" alt="..." />
           </div>
@@ -458,7 +455,7 @@
       </div>
 
       <div class="card mb-5 col-lg-12 p-0">
-        <div class="row no-gutters">
+        <div class="row no-gutters shadow">
           <div class="col-lg-7 col-md-6 col-sm-12">
             <img src="img/portfolio/portfolio3.png" class="card-img" alt="..." />
           </div>
@@ -475,79 +472,9 @@
       </div>
 
   </section>
-  <!-- Portfolio part end -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="item active text-center">
-          <img src="img/author/author_1.png" class="mx-auto w-25">
-        <h4 >"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>				
-      </div>
-      <div class="item text-center">
-        <img src="img/author/author_2.png" class="mx-auto w-25">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>				
-      </div>
-      <div class="item text-center">
-        <img src="img/author/author_3.png" class="mx-auto w-25">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
-  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active text-center">
-        <img src="map.jpg">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>				
-      </div>
-      <div class="item text-center">
-        <img src="newyork.jpg">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>				
-      </div>
-      <div class="item text-center">
-        <img src="paris.jpg">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div> -->
-  <!-- ourteam part start -->
-  <section class="cta_part section_padding" id="our_team">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-xl-6">
-          <div class="cta_text text-center">
-            <h2>Very useful Friendly</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo
-            </p>
-            <a href="#" class="btn_2 banner_btn_1">Get Started </a>
-            <a href="#" class="btn_2 banner_btn_2">Sign up for free </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!--Portfolio part end-->
+
+  <!-- ourteam part start-->
   <section class="about_us right_time section_padding">
     <div class="container">
       <div class="row align-items-center justify-content-between">
@@ -574,7 +501,60 @@
     <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1" />
     <img src="img/animate_icon/shape.png" alt="" class="feature_icon_4" />
   </section>
-  <!-- ourteam part end -->
+  <section class="cta_part section_padding" id="our_team">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+          <div class="cta_text text-center">
+            <h2>Very useful Friendly</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo
+            </p>
+            <a href="#" class="btn_2 banner_btn_1">Get Started </a>
+            <a href="#" class="btn_2 banner_btn_2">Sign up for free </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ourteam part end-->
+  <section id="our-services" class="our-services">
+    <div class="container">
+      <div class="w-100 text-center">
+        <div class="w-100 d-flex" style="flex-wrap: wrap">
+          <div class="BODDY mx-auto">
+            <img src="../stack-circle.github.io/img/author/author_1.png" class="w-50">
+            <h3 class="pt-3">WordPress</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
+          </div>
+          <div class="BODDY mx-auto">
+            <img src="../stack-circle.github.io/img/author/author_2.png" class="w-50">
+            <h3 class="pt-3">WordPress</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
+          </div>
+          <div class="BODDY mx-auto">
+            <img src="../stack-circle.github.io/img/author/author_3.png" class="w-50">
+            <h3 class="pt-3">WordPress</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas temporibus quo amet illum harum consequuntur, voluptate, molestiae, molestias est ea. Dolor saepe repellat dolorem eligendi alias quisquam necessitatibus quis!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid" id="team">
+    <div class="container team">
+      <h1>OUR TEAM WORK ON STACKS</h1>
+      <h5 class="pt-3">5 Sections /<span>3 Status /</span><span>100 % Vector Shape</span></h5>
+      <h5 class="pb-3">Modern design <span> / </span><span>Very Editable</span></h5>
+      <hr class="divider">
+      <div class="col-6 mx-auto pt-3">
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam pariatur sunt dolore id, labore fuga magnam quidem illo molestiae non animi sit et blanditiis repudiandae, autem minima at eligendi deleniti.</p>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- ================ contact section start ================= -->
   <section class="contact-section section_padding" id="contact_us">
@@ -798,7 +778,6 @@
 
   <!-- jquery plugins here-->
   <!-- jquery -->
-
   <script src="js/jquery-1.12.1.min.js"></script>
   <!-- popper js -->
   <script src="js/popper.min.js"></script>
@@ -823,38 +802,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/mail-script.js"></script>
   <!-- custom js -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-    });
-    })
-  </script>
-  <!-- <script>
-  $('#recipeCarousel').carousel({
-  interval: 10000
-})
-
-$('.carousel .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<2;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
-  </script> -->
 </body>
 
 </html>
