@@ -122,7 +122,7 @@
  }
  }
  
- .hww {
+ .tech {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,13 +134,13 @@
   background-color: #0ab6ff;
  }
  
- .hww h2 {
+ .tech h2 {
   text-align: center;
   color: #ffffff;
   font-size: 30px;
  }
  
- .hww .hp1 {
+ .tech .hp1 {
   text-align: center;
   margin-top: 20px;
   width: 80%;
@@ -152,7 +152,7 @@
   font-family: "Poppins", sans-serif;
  }
  
- .hww .berief {
+ .tech .berief {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -161,7 +161,7 @@
   /* background-color: gold; */
  }
  
- .hww .berief .hblock {
+ .tech .berief .hblock {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,7 +171,7 @@
   /* background-color: blue; */
  }
  
- .hww .berief .hblock .icon {
+ .tech .berief .hblock .icon {
   position: relative;
   /* left: 5em; */
   height: 9em;
@@ -181,15 +181,15 @@
   transform: scale(1);
   transition: transform 0.3s;
  }
- .hww .berief .hblock .icon img{
+ .tech .berief .hblock .icon img{
    width: 75%
  }
  
- .hww .berief .hblock .icon:hover {
+ .tech .berief .hblock .icon:hover {
   transform: scale(0.95);
  }
  
- .hww .berief .hblock .bp1 {
+ .tech .berief .hblock .bp1 {
   margin-top: 20px;
   text-align: center;
   font-size: 20px;
@@ -200,7 +200,7 @@
   line-height: 1.5em;
  }
  
- .hww .berief .hblock .bp2 {
+ .tech .berief .hblock .bp2 {
   margin-top: 20px;
   width: 90%;
   text-align: center;
@@ -211,24 +211,24 @@
   font-family: "Poppins", sans-serif;
  }
  @media (max-width:801px)  { 
-  .hww .berief{
+  .tech .berief{
       width: 100%;
       text-align: center;
       justify-content: center
   }
-  .hww .berief .hblock{
+  .tech .berief .hblock{
       width: 49vw;
 
   }
 }
 /* for mobile */
 @media (max-width:480px) { 
-  .hww .berief{
+  .tech .berief{
       width: 100%;
       text-align: center;
       justify-content: center
   }
-  .hww .berief .hblock{
+  .tech .berief .hblock{
       width: 95vw;
   }
 }

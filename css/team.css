@@ -1,17 +1,30 @@
-.team{
-    justify-content: center;
+.our-team{
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 20px;
-    
-}
-#team{
-    padding:20px;
+    justify-content: center;
     background-color: #0ab6ff;
-    margin-top: 20px;
+    background-image: url(../img/stackimages/laptop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.team .divider{
-    border-width: .1rem;
-    border-color: #000000;
-    max-width: 12rem;
-    padding-top: 20px;
+.member{
+    width: 15vw;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.member p,h4{
+    color: white
+}
+  /* for mobile */
+  @media (max-width:480px) { 
+    .member{
+        width: 30vw;
+    }
+    .member h4{
+        font-size: 18px
+    }
   }
