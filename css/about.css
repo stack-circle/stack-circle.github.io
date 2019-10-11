@@ -121,6 +121,25 @@
   margin-top: 30px
  }
  }
+ @media (max-width:768px) {
+  .explain{
+    width: 100%;
+  }
+.explain .ablock{
+ width:95vw;
+ height: 25vh
+}
+@media (max-width:480px) {
+  .explain{
+    width: 100%;
+  }
+.explain .ablock{
+ width:95vw;
+ height: 50vh;
+ margin-top: 30px
+}
+
+}
  
  .tech {
   display: flex;
