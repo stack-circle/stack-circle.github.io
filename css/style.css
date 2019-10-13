@@ -78,14 +78,14 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 18, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_common.scss */
   .section_padding {
-    padding: 70px 0px;
+    padding: 28px 0px;
   }
 }
 
 @media (max-width: 576px) {
   /* line 18, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_common.scss */
   .section_padding {
-    padding: 70px 0px;
+    padding: 35px 0px;
   }
 }
 
