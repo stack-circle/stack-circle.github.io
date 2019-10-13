@@ -19,6 +19,12 @@
 .member p,h4{
     color: white
 }
+  /* for iPad */
+  @media (min-width: 480px) and (max-width: 768px){ 
+    .member h4{
+        font-size: 11px;
+    }
+  }
   /* for mobile */
   @media (max-width:480px) { 
     .member{
