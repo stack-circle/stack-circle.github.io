@@ -42,7 +42,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 22em;
     width: 24%;
     /* background-color: blue; */
    }
@@ -56,6 +55,7 @@
     border-radius: 50%;
     transform: scale(1);
     transition: transform 0.3s;
+    font-size: 1rem;
    }
    .tech .berief .hblock .icon img{
      width: 75%
@@ -86,7 +86,7 @@
     color: #ffffff;
     font-family: "Poppins", sans-serif;
    }
-   @media (max-width:801px)  { 
+   @media (min-width:480px) and (max-width:801px)  { 
     .tech .berief{
         width: 100%;
         text-align: center;
@@ -95,6 +95,9 @@
     .tech .berief .hblock{
         width:45vw;
   
+    }
+    .tech .berief .marg{
+      margin-top: 28px;
     }
   }
   /* for mobile */
@@ -106,5 +109,6 @@
     }
     .tech .berief .hblock{
         width: 95vw;
+        padding-top: 27px;
     }
   }
