@@ -34,7 +34,6 @@
     justify-content: space-between;
     margin-top: 60px;
     width: 96%;
-    /* background-color: gold; */
    }
    
    .tech .berief .hblock {
@@ -43,7 +42,7 @@
     justify-content: center;
     align-items: center;
     width: 24%;
-    /* background-color: blue; */
+    height: 424px;
    }
    
    .tech .berief .hblock .icon {
