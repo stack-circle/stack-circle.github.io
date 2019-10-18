@@ -2304,7 +2304,16 @@ ul {
 .dropdown:hover .dropdown-menu {
   transform: scale(1);
 }
-
+@media (min-width:480px) and (max-width:768px){
+  .main_menu .main-menu-item {
+    margin-top: -25px;
+  }
+}
+@media (max-width:480px){
+  .main_menu .main-menu-item {
+    margin-top: -28px;
+  }
+}
 
 @media (max-width: 991px) {
   /* line 184, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_menu.scss */
@@ -2319,7 +2328,7 @@ ul {
   .main_menu .main-menu-item {
     text-align: left !important;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    margin-top: -9px;
+    /* margin-top: -9px; */
   }
   /* line 196, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item {

@@ -42,7 +42,7 @@
 
 </head>
 
-<body>
+<body class="body">
   <!--::header part start::-->
   <header class="main_menu home_menu">
     <div class="container">
@@ -451,7 +451,10 @@
 
   <!-- ourteam part start-->
   <section id="our_team" class="our-team">
-    <div class="w-100" style="opacity: .8; background-color: black">
+    <div class="w-100" style="
+      background: rgba(0, 0, 0, 0.866);
+      
+  ">
       <div class="container" style="padding-top: 70px;padding-bottom: 70px">
         <div class="w-75 mx-auto text-center pt-4">
           <h1 class="text-white">Meet Our Team</h1>
@@ -782,6 +785,12 @@
       $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
       });
+      $('.body').on('click' , function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+      $('window').on('scroll' , function () {
+        $('.navbar-collapse').collapse('hide');
+      })
     })
 
   </script>
