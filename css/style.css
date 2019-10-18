@@ -2306,12 +2306,12 @@ ul {
 }
 @media (min-width:480px) and (max-width:768px){
   .main_menu .main-menu-item {
-    margin-top: -25px;
+    margin-top: -24px;
   }
 }
 @media (max-width:480px){
   .main_menu .main-menu-item {
-    margin-top: -28px;
+    margin-top: -27px;
   }
 }
 
