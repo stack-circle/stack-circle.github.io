@@ -2998,7 +2998,11 @@ ul {
   margin-bottom: 28px;
   position: relative;
 }
-
+@media (max-width:768){
+  .about_us .feature_icon_1{
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   /* line 37, ../../01 cl html template/03_jun 2019/184_SAAS_template/sass/_about_us.scss */
   .about_us .about_us_text h2 {
@@ -5981,5 +5985,15 @@ h6 {
     float: none;
   }
 }
+@media (min-width: 992px){
+.d-lg-block{
+  margin-top: -114px;
+}}
+@media (min-width: 992px){
+  .banner_part .banner_text h1{
+    margin-top: -211px;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */

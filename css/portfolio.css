@@ -8,3 +8,6 @@
         flex-direction:column-reverse
     }
 }
+.no-gutters{
+    text-align: center;
+}
