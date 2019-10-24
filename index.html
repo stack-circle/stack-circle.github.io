@@ -582,14 +582,13 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
-            novalidate="novalidate">
+          <form class="form-contact contact_form" id="sendform" action="https://formspree.io/xdonewvw" method="POST" novalidate="novalidate">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
                   <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
-                    placeholder="Enter Message"></textarea>
+                    placeholder="Enter Message (optional)"></textarea>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -607,12 +606,15 @@
               <div class="col-12">
                 <div class="form-group">
                   <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject" />
+                    onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject (optional)" />
                 </div>
               </div>
             </div>
+            <div class="col-12 ">
+              <p style="color: red; font-size: 16px;" id="errorMessage"></p>
+            </div>
             <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm btn_1">
+              <button type="submit" id="submit" onclick="handlesubmit()" class="button button-contactForm btn_1">
                 Send Message <i class="flaticon-right-arrow"></i>
               </button>
             </div>
@@ -782,13 +784,68 @@
       $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
       });
-      $('.body').on('click' , function () {
+      $('.body').on('click', function () {
         $('.navbar-collapse').collapse('hide');
       });
-      $(window).on('scroll' , function () {
+      $(window).on('scroll', function () {
         $('.navbar-collapse').collapse('hide');
       })
     })
+
+    $('#sendform').submit(e => {
+      var name = document.getElementsByName("name");
+      var email = document.getElementsByName('email')
+      var message = document.getElementsByName("message");
+      var subject = document.getElementsByName('subject')
+      if (!name[0].value || !email[0].value) {
+        console.log('please check your entries', name.vlaue, eamil.vlaue)
+        document.getElementById('#errorMessage').innerHTML = "Name and email is required"
+      } else {
+        //   $.ajax({
+        //   url:"https://formpree.io/stackcircle@outlook.com",
+        //   method:"POST",
+        //   data:$(this).serialize(),
+        //   dataType:"json"
+        // })
+      }
+
+    })
+    function handlesubmit() {
+      console.log('this is submit')
+    }
+    $("#email").change(function () {
+      
+      if (document.getElementsByName("email")[0].value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+        document.getElementById('errorMessage').innerHTML = ""
+        if (document.getElementsByName("name")[0].value) {
+          $("#submit").attr("disabled", false);
+        } else {
+          $("#submit").attr("disabled", true);
+        }
+        
+      } else {
+        document.getElementById('errorMessage').innerHTML = "invalid email"
+        $("#submit").attr("disabled", true);
+
+      }
+
+    });
+
+    $("#name").change(function () {
+
+      if (document.getElementsByName("name")[0].value) {
+          document.getElementById('errorMessage').innerHTML = ""
+          if(document.getElementsByName("email")[0].value){
+            $("#submit").attr("disabled", false);
+          }else{
+            $("#submit").attr("disabled", true);
+          }
+        } else {
+          document.getElementById('errorMessage').innerHTML = "Please enter your name"
+          $("#submit").attr("disabled", true);
+        }
+
+    });
 
   </script>
 </body>
